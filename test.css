@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #background-video {
+    position: fixed; /* Đảm bảo video luôn cố định */
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh; 
+    /* object-fit: cover;  */
+    object-position: center; /* Đảm bảo video được căn giữa */
+    z-index: -1; /* Đặt video phía sau nội dung */
+  }
+  
+  .content {
+    color: white;
+    text-align: center;
+    z-index: 1; /* Đặt nội dung phía trước video */
+  }
+  
